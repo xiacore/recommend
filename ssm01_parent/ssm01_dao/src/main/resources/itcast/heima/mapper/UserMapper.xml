@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="itcast.heima.mapper.UserMapper">
+    <select id="findAll" resultType="User">
+		select * from USER
+	</select>
+	<select id="UserLogin" resultType="User" parameterType="User">
+		select * from USER where username = #{username} and password = #{password}
+	</select>
+	<insert id="insertUser" parameterType="User" >
+		insert into user (username,password) value (#{username},#{password})
+	</insert>
+</mapper>
