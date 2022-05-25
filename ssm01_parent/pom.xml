@@ -21,7 +21,7 @@
         <shiro.version>1.2.3</shiro.version>
         <mysql.version>5.1.38</mysql.version>
         <mybatis.version>3.4.5</mybatis.version>
-        <spring.security.version>5.0.5.RELEASE</spring.security.version>
+        <spring.security.version>5.5.7</spring.security.version>
     </properties>
     <dependencyManagement>
         <!-- 项目依赖jar包 -->
